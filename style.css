@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,html{
+  display: flex;
+  align-items: center;
+  background-color: seagreen;
+  justify-content: center;
+  min-height: 100vh;
+  color: white;
+  
+}
+.container{
+  position: relative;;
+  height: 600px;
+  background-color:slateblue;
+  width: 500px;
+  max-width: 600px;
+  border-radius: 14px;
+}
+.searchbox{
+  display: flex;
+  align-items: center;
+ justify-content: space-between;
+  padding: 14px;
+  background-color: slateblue;
+}
+input{
+  background:transparent;
+  width: 230px;
+  margin-left: 40px;
+  border: none;
+  outline: none;
+  padding: 8px;
+  color: white;
+  border-radius: 10px;
+}
+input::placeholder{
+  padding-left: px;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  color: rgb(249, 245, 245);
+}
+.searchbox i{
+  position: absolute;
+ 
+ 
+  font-size: 1.2rem;
+  color: white;
+}
+.uil-search{
+  position: absolute; right: 20px;
+  cursor: pointer;
+}
+.weather-box{
+  text-align: center;
+}
+.infohumidity{
+  font-size: 1.2rem;
+}
+.infowind{
+  font-size: 1.2rem;
+}
+.weather-box img{
+  margin: 20px;
+  width: 60%;
+}
+.temperature{
+  margin-top: 12px;
+  font-size: 64px;
+  font-weight: 600;
+ }
+.temperature span{
+  position: absolute;
+  font-size: 20px;
+}
+.weatherdetails{
+  position: absolute;
+
+  bottom: 40px;
+  left: 0px;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+.active{
+  visibility: hidden;
+}
+.weatherdetails .humidity,
+.weatherdetails .wind
+{
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.weatherdetails .humidity{
+  /* padding-left: 20px; */
+  justify-content: flex-start;
+}
+.weatherdetails .wind{
+  padding-left: 20px;
+  justify-content: flex-end;
+}
+
+.weatherdetails i{
+  font-size: 56px;
+  margin-right: 10px;
+}
+.weatherdetails span{
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 500;
+}
+.weatherdetails p{
+  font-size: 14px;
+  font-weight: 500;
+  
+}
+  /* .notfound{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 110px;
+  }
+  .notfound img{
+         width: 65%;
+  } */
+  @media only screen and (max-width: 600px) {
+    .container {
+      width: 90%; /* Adjust the width for smaller screens */
+    }
+  
+    input {
+      width: 100%; /* Make the input full width */
+      margin-left: 0; /* Remove left margin */
+      margin-top: 10px; /* Add some top margin */
+    }
+  
+    .weatherdetails .wind {
+      justify-content: flex-start; /* Adjust alignment for smaller screens */
+    }
+  }
+  
